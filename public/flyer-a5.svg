@@ -39,8 +39,7 @@
   <g transform="translate(100,118)">
     <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
     <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">Scan QR</text>
-    <rect x="4" y="6" width="32" height="32" fill="#111827"/>
-    <text x="20" y="24" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3" fill="#ffffff">QR here</text>
+    <image href="/qr.svg" x="4" y="6" width="32" height="32"/>
   </g>
 
   <g transform="translate(8,164)">
