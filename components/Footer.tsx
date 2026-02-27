@@ -28,8 +28,8 @@ export default function Footer() {
           <p className="font-semibold">Get a Free Quote</p>
           <a href="#quote" className="inline-block bg-brand-600 text-white px-5 py-3 rounded">Start</a>
           <div className="flex items-center gap-2">
-            <a href="https://wa.me/2340000000000" className="text-brand-700">WhatsApp</a>
-            <a href="tel:+2340000000000" className="text-brand-700">Call</a>
+            <a href="https://wa.me/447442907768" className="text-brand-700">WhatsApp</a>
+            <a href="tel:+447442907768" className="text-brand-700">Call</a>
           </div>
         </div>
       </div>

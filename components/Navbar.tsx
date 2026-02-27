@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link href="/contact" className={isActive("/contact") ? "text-brand-700 font-semibold border-b-2 border-brand-600" : "hover:text-brand-700"}>Contact</Link>
         </nav>
         <div className="hidden md:block">
-          <a href="tel:+2340000000000" className="bg-brand-600 text-white px-4 py-2 rounded-full">Call</a>
+          <a href="tel:+447442907768" className="bg-brand-600 text-white px-4 py-2 rounded-full">Call</a>
         </div>
         <button aria-label="Menu" className="md:hidden" onClick={() => setOpen(!open)}>
           <span className="inline-block w-6 h-6 border border-gray-800 rounded" />

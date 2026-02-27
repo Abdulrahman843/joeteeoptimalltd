@@ -38,8 +38,13 @@
 
   <g transform="translate(100,118)">
     <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
-    <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">Scan QR</text>
-    <image href="/qr.svg" x="4" y="6" width="32" height="32"/>
+    <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">Website</text>
+    <image href="/api/qr?data=https%3A%2F%2Fjoeteeoptimalltd.vercel.app%2F" x="4" y="6" width="32" height="32"/>
+  </g>
+  <g transform="translate(100,162)">
+    <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
+    <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">WhatsApp</text>
+    <image href="/api/qr?data=https%3A%2F%2Fwa.me%2F447442907768" x="4" y="6" width="32" height="32"/>
   </g>
 
   <g transform="translate(8,164)">
@@ -48,7 +53,7 @@
     <text x="0" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Email:</text>
     <text x="12" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">info@joeteeoptimalltd.com</text>
     <text x="0" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Phone:</text>
-    <text x="14" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">Add phone later</text>
+    <text x="14" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">+447442907768</text>
   </g>
 
   <g transform="translate(8,184)">

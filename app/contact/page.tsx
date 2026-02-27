@@ -9,13 +9,13 @@ export default function Contact() {
           Request a free quote. We respond quickly.
         </p>
         <div className="space-y-2 text-sm">
-          <p>Phone: +234 000 000 0000</p>
+          <p>Phone: +447442907768</p>
           <p>Email: info@joeteeoptimal.com</p>
           <p>Hours: Mon–Sun 8AM–9PM</p>
         </div>
         <div className="flex gap-3">
-          <a href="https://wa.me/2340000000000" className="border border-brand-600 text-brand-700 px-5 py-3 rounded">WhatsApp</a>
-          <a href="tel:+2340000000000" className="bg-brand-600 text-white px-5 py-3 rounded">Call</a>
+          <a href="https://wa.me/447442907768" className="border border-brand-600 text-brand-700 px-5 py-3 rounded">WhatsApp</a>
+          <a href="tel:+447442907768" className="bg-brand-600 text-white px-5 py-3 rounded">Call</a>
         </div>
       </div>
       <QuoteForm />

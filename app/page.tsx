@@ -14,7 +14,7 @@ export default function Home() {
           </p>
           <div className="flex gap-3">
             <a href="#quote" className="bg-brand-600 text-white px-5 py-3 rounded-full">Get a Free Quote</a>
-            <a href="https://wa.me/2340000000000" className="border border-brand-600 text-brand-700 px-5 py-3 rounded-full">WhatsApp</a>
+            <a href="https://wa.me/447442907768" className="border border-brand-600 text-brand-700 px-5 py-3 rounded-full">WhatsApp</a>
           </div>
           <div className="flex gap-4 text-sm text-gray-600">
             <span>Insured</span>
