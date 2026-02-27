@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148mm" height="210mm" viewBox="0 0 148 210">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#115e59"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="148" height="210" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="148" height="48" fill="url(#bg)"/>
+  <g transform="translate(8,10)">
+    <image href="logo.svg" x="0" y="0" width="24" height="24"/>
+    <text x="30" y="16" font-family="DM Sans, Poppins, Arial" font-size="8" fill="#ffffff" font-weight="700">Joetee Optimal Limited</text>
+    <text x="0" y="34" font-family="DM Sans, Poppins, Arial" font-size="9" fill="#ffffff" font-weight="700">Premium Cleaning for Homes & Businesses</text>
+  </g>
+
+  <g transform="translate(8,58)">
+    <text x="0" y="0" font-family="Inter, Manrope, Arial" font-size="4" fill="#111827">
+      Standard, big, regular maintenance, deep cleaning. Move-in/move-out, Airbnb, post-construction, janitorial services.
+    </text>
+  </g>
+
+  <g transform="translate(8,72)">
+    <rect x="0" y="0" width="132" height="40" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+    <text x="6" y="10" font-family="Inter, Manrope, Arial" font-size="4.2" fill="#0f766e" font-weight="700">Our Services</text>
+    <text x="6" y="18" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Residential • Commercial • Move‑in/Move‑out • Airbnb</text>
+    <text x="6" y="24" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Post‑construction • Janitorial • Standard • Big Cleaning • Deep Cleaning</text>
+    <text x="6" y="32" font-family="Inter, Manrope, Arial" font-size="3.4" fill="#6b7280">Insured • Checklist Driven • 100% Satisfaction Guarantee</text>
+  </g>
+
+  <g transform="translate(8,118)">
+    <rect x="0" y="0" width="88" height="32" rx="4" fill="#ffffff" stroke="#e5e7eb"/>
+    <text x="6" y="10" font-family="Inter, Manrope, Arial" font-size="4.2" fill="#111827" font-weight="700">Get a Free Quote</text>
+    <text x="6" y="18" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Tell us about your property and schedule.</text>
+    <rect x="6" y="22" width="30" height="8" rx="4" fill="#0f766e"/>
+    <text x="11" y="27.2" font-family="Inter, Manrope, Arial" font-size="3.4" fill="#ffffff" font-weight="700">Start</text>
+  </g>
+
+  <g transform="translate(100,118)">
+    <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
+    <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">Scan QR</text>
+    <rect x="4" y="6" width="32" height="32" fill="#111827"/>
+    <text x="20" y="24" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3" fill="#ffffff">QR here</text>
+  </g>
+
+  <g transform="translate(8,164)">
+    <text x="0" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Website:</text>
+    <text x="18" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">https://joeteeoptimalltd.vercel.app/</text>
+    <text x="0" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Email:</text>
+    <text x="12" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">info@joeteeoptimalltd.com</text>
+    <text x="0" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Phone:</text>
+    <text x="14" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">Add phone later</text>
+  </g>
+
+  <g transform="translate(8,184)">
+    <text x="0" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#6b7280">Mon–Sun: 8AM–9PM • Service Area: Add city/region</text>
+  </g>
+
+  <g transform="translate(8,196)">
+    <text x="0" y="0" font-family="Inter, Manrope, Arial" font-size="3.2" fill="#9ca3af">© 2026 Joetee Optimal Limited</text>
+  </g>
+</svg>
