@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#115e59"/>
+    </linearGradient>
+    <style>
+      .h1{font: 900 14px 'Poppins', Arial, sans-serif; fill:#0b1020}
+      .h2{font: 700 8px 'Poppins', Arial, sans-serif; fill:#0b1020}
+      .body{font: 500 4px 'Inter', Arial, sans-serif; fill:#374151}
+      .muted{font: 500 3.6px 'Inter', Arial, sans-serif; fill:#6b7280}
+      .chip{font: 700 3.6px 'Inter', Arial, sans-serif; fill:#ffffff}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="210" height="297" fill="#ffffff"/>
+  <!-- Header band -->
+  <rect x="0" y="0" width="210" height="34" fill="url(#header)"/>
+  <g transform="translate(10,7)">
+    <image href="logo.svg" x="0" y="0" width="20" height="20"/>
+    <text x="26" y="10" class="h2" fill="#ffffff" style="font-size:7px">JOETEE OPTIMAL LIMITED</text>
+    <text x="26" y="18" class="body" fill="#cffafe" style="font-size:4px">Professional Cleaning Services</text>
+  </g>
+
+  <!-- Headline -->
+  <g transform="translate(10,46)">
+    <text class="h1">Professional Cleaning Services</text>
+    <text y="10" class="body" style="font-size:5px; fill:#0f766e">Reliable • Professional • Fast Turnaround</text>
+  </g>
+
+  <!-- Services -->
+  <g transform="translate(10,66)">
+    <text class="h2">Services</text>
+    <g transform="translate(0,6)">
+      <rect x="0" y="0" width="190" height="40" rx="4" fill="#f9fafb" stroke="#e5e7eb"/>
+      <text x="6" y="10" class="body">• End of Tenancy Cleaning</text>
+      <text x="6" y="18" class="body">• Deep Cleaning</text>
+      <text x="6" y="26" class="body">• Property Cleaning</text>
+      <text x="6" y="34" class="body">• Move‑in / Move‑out Cleans • After Builders Cleaning • Regular Cleaning</text>
+    </g>
+  </g>
+
+  <!-- Why Choose Us -->
+  <g transform="translate(10,120)">
+    <text class="h2">Why Choose Us</text>
+    <g transform="translate(0,6)">
+      <rect x="0" y="0" width="190" height="40" rx="4" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="6" y="10" class="body">• Reliable and punctual</text>
+      <text x="6" y="18" class="body">• High cleaning standards</text>
+      <text x="6" y="26" class="body">• Competitive prices</text>
+      <text x="6" y="34" class="body">• Short‑notice bookings available • Friendly professional service</text>
+    </g>
+  </g>
+
+  <!-- CTA + QR -->
+  <g transform="translate(10,174)">
+    <rect x="0" y="0" width="118" height="36" rx="4" fill="#eef2f7"/>
+    <text x="6" y="10" class="h2">Scan for a Free Quote</text>
+    <text x="6" y="18" class="body">Visit our website or chat with our team to book today.</text>
+    <g transform="translate(130,0)">
+      <rect x="0" y="0" width="70" height="70" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="35" y="-4" text-anchor="middle" class="body" style="font-size:4px; fill:#0b1020">Website</text>
+      <image href="/api/qr?data=https%3A%2F%2Fwww.joeteeoptimalltd.com%2F&amp;fmt=png" x="6" y="6" width="58" height="58"/>
+    </g>
+  </g>
+
+  <!-- Contact -->
+  <g transform="translate(10,222)">
+    <text class="h2">Contact</text>
+    <g transform="translate(0,6)">
+      <rect x="0" y="0" width="190" height="46" rx="4" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="6" y="12" class="body">Phone: 07442907768</text>
+      <text x="6" y="20" class="body">Email: info@joeteeoptimalltd.com</text>
+      <text x="6" y="28" class="body">Website: www.joeteeoptimalltd.com</text>
+      <text x="6" y="36" class="body">Address: 86‑90 Paul Street, London EC2A 4NE</text>
+      <text x="160" y="12" class="chip" text-anchor="end" style="font-size:3.4px; fill:#0f766e">Fully Insured</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(0,278)">
+    <rect x="0" y="0" width="210" height="8" fill="url(#header)"/>
+    <text x="105" y="6" text-anchor="middle" class="muted" fill="#e5e7eb">© 2026 Joetee Optimal Limited</text>
+  </g>
+</svg>
