@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import PlaceholderArt from "../../components/PlaceholderArt"
-import { site } from "../../lib/site"
+import Photo from "../../components/Photo"
+import { site, images } from "../../lib/site"
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -45,14 +45,29 @@ export default function About() {
         </div>
       </div>
       <div className="space-y-4">
-        <PlaceholderArt
-          label="Trained, vetted teams"
-          caption="Checklist-driven cleans across the UK"
-          variant={0}
+        <Photo
+          src={images.team.src}
+          alt={images.team.alt}
+          caption="Checklist-driven cleans, UK-wide."
+          aspect="wide"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="shadow-md"
         />
         <div className="grid grid-cols-2 gap-4">
-          <PlaceholderArt label="Eco-safe supplies" variant={2} />
-          <PlaceholderArt label="100% satisfaction" variant={4} />
+          <Photo
+            src={images.kitchen.src}
+            alt={images.kitchen.alt}
+            aspect="square"
+            sizes="(min-width: 768px) 25vw, 50vw"
+            className="shadow-sm"
+          />
+          <Photo
+            src={images.bathroom.src}
+            alt={images.bathroom.alt}
+            aspect="square"
+            sizes="(min-width: 768px) 25vw, 50vw"
+            className="shadow-sm"
+          />
         </div>
       </div>
     </main>

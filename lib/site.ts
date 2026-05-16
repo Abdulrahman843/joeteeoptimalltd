@@ -4,8 +4,8 @@ export const site = {
   legalName: "Joetee Optimal Limited",
   description:
     "Professional residential and commercial cleaning across the UK — end of tenancy, deep cleaning, move-in/move-out, after-builders, Airbnb turnovers, janitorial, and regular maintenance.",
-  url: "https://joeteeoptimalltd.vercel.app",
-  email: "info@joeteeoptimal.com",
+  url: "https://www.joeteeoptimalltd.co.uk",
+  email: "info@joeteeoptimalltd.com",
   phone: "+447442907768",
   phoneDisplay: "+44 7442 907768",
   whatsappNumber: "447442907768",
@@ -34,3 +34,74 @@ export const site = {
 
 export const telHref = `tel:${site.phone}`
 export const mailHref = `mailto:${site.email}`
+
+// Centralized image map (Unsplash). Each ID below has been verified to return
+// HTTP 200 from images.unsplash.com. To swap an image, change only the ID.
+// Pattern: https://images.unsplash.com/photo-{id}?auto=format&fit=crop&w={w}&q=80
+const u = (id: string, w = 1600) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
+
+export const images = {
+  hero: {
+    src: u("1581578731548-c64695cc6952", 1800),
+    alt: "Professional cleaner wiping a glossy kitchen worktop"
+  },
+  endOfTenancy: {
+    src: u("1505691938895-1758d7feb511"),
+    alt: "Empty, freshly cleaned room ready for the next tenant"
+  },
+  deepClean: {
+    src: u("1556228720-195a672e8a03"),
+    alt: "Spotless, deep-cleaned modern living room"
+  },
+  office: {
+    src: u("1556761175-5973dc0f32e7"),
+    alt: "Tidy modern office space after professional cleaning"
+  },
+  afterBuilders: {
+    src: u("1503387762-592deb58ef4e"),
+    alt: "Interior space after a post-construction cleanup"
+  },
+  airbnb: {
+    src: u("1611892440504-42a792e24d32"),
+    alt: "Hotel-style made-up bed ready for the next Airbnb guest"
+  },
+  janitorial: {
+    src: u("1581578017093-cd30fce4eeb7"),
+    alt: "Cleaning supplies and microfibre cloths laid out for janitorial work"
+  },
+  kitchen: {
+    src: u("1556909114-f6e7ad7d3136"),
+    alt: "Clean, modern kitchen with polished worktops"
+  },
+  bathroom: {
+    src: u("1552321554-5fefe8c9ef14"),
+    alt: "Sparkling, modern bathroom with chrome fixtures"
+  },
+  team: {
+    src: u("1581578017093-cd30fce4eeb7"),
+    alt: "Eco-safe cleaning supplies used by our trained team"
+  },
+  moveIn: {
+    src: u("1505691938895-1758d7feb511"),
+    alt: "Freshly cleaned residential interior ready for new occupants"
+  },
+  regular: {
+    src: u("1581578731548-c64695cc6952"),
+    alt: "Professional cleaner maintaining a home with regular cleans"
+  },
+  blogKitchen: {
+    src: u("1556909114-f6e7ad7d3136"),
+    alt: "Kitchen worktop and hob after a deep clean"
+  },
+  blogPros: {
+    src: u("1581578731548-c64695cc6952"),
+    alt: "Professional cleaner attending to a worktop"
+  },
+  blogPostBuild: {
+    src: u("1503387762-592deb58ef4e"),
+    alt: "Interior dust removal after a construction project"
+  }
+} as const
+
+export type ImageEntry = { src: string; alt: string }

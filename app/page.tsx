@@ -2,8 +2,9 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import QuoteForm from "../components/QuoteForm"
 import ServiceCard from "../components/ServiceCard"
+import Photo from "../components/Photo"
 import { FaqJsonLd } from "../components/StructuredData"
-import { site } from "../lib/site"
+import { site, images } from "../lib/site"
 
 export const metadata: Metadata = {
   title: "Professional Cleaning Services in London & UK",
@@ -35,12 +36,45 @@ const FAQS = [
   }
 ]
 
+const HOME_SERVICES = [
+  {
+    title: "End of Tenancy Cleaning",
+    description: "Detailed move-out cleans for landlords and tenants.",
+    image: images.endOfTenancy
+  },
+  {
+    title: "Deep Cleaning",
+    description: "Thorough top-to-bottom clean for kitchens, baths, and living areas.",
+    image: images.deepClean
+  },
+  {
+    title: "Move-in / Move-out",
+    description: "Fresh start cleans before you move in or after you move out.",
+    image: images.moveIn
+  },
+  {
+    title: "After Builders Cleaning",
+    description: "Dust removal and finishing after renovations and construction.",
+    image: images.afterBuilders
+  },
+  {
+    title: "Regular Cleaning",
+    description: "Reliable weekly/bi-weekly maintenance to keep spaces fresh.",
+    image: images.regular
+  },
+  {
+    title: "Airbnb Turnovers",
+    description: "Hotel-grade resets between guests, with linen and staging.",
+    image: images.airbnb
+  }
+]
+
 export default function Home() {
   return (
     <main className="bg-white">
       <FaqJsonLd items={FAQS} />
 
-      <section className="container py-10 md:py-16 grid lg:grid-cols-2 gap-10 items-start">
+      <section className="container py-10 md:py-16 grid lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold">
             Professional Cleaning Services in London
@@ -90,10 +124,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-2xl border shadow-sm p-4 md:p-6">
-          <p className="font-semibold mb-3">Get a Free Cleaning Quote</p>
-          <QuoteForm id="quote" />
-        </div>
+        <Photo
+          src={images.hero.src}
+          alt={images.hero.alt}
+          aspect="wide"
+          priority
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="shadow-md"
+        />
       </section>
 
       <section className="container py-10 md:py-14">
@@ -126,12 +164,15 @@ export default function Home() {
       <section className="container py-10 md:py-14">
         <h2 className="text-3xl font-bold mb-6">Popular Cleaning Services</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ServiceCard title="End of Tenancy Cleaning" description="Detailed move-out cleans for landlords and tenants." />
-          <ServiceCard title="Deep Cleaning" description="Thorough top-to-bottom clean for kitchens, baths, and living areas." />
-          <ServiceCard title="Move-in / Move-out" description="Fresh start cleans before you move in or after you move out." />
-          <ServiceCard title="After Builders Cleaning" description="Dust removal and finishing after renovations and construction." />
-          <ServiceCard title="Regular Cleaning" description="Reliable weekly/bi-weekly maintenance to keep spaces fresh." />
-          <ServiceCard title="Property Cleaning" description="Tailored packages for homes, apartments, and offices." />
+          {HOME_SERVICES.map(s => (
+            <ServiceCard
+              key={s.title}
+              title={s.title}
+              description={s.description}
+              image={s.image}
+              href="/contact#quote"
+            />
+          ))}
         </div>
         <div className="mt-8 flex gap-3">
           <Link href="/services" className="bg-brand-600 text-white px-5 py-3 rounded">
@@ -146,10 +187,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container py-10 md:py-14">
-        <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white border rounded-xl p-6">
+      <section className="container py-10 md:py-14 grid md:grid-cols-2 gap-10 items-center">
+        <Photo
+          src={images.kitchen.src}
+          alt={images.kitchen.alt}
+          aspect="wide"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="shadow-md"
+        />
+        <div>
+          <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
             <ul className="space-y-2 text-gray-700">
               <li>Reliable and punctual</li>
               <li>High cleaning standards</li>
@@ -157,8 +205,6 @@ export default function Home() {
               <li>Short-notice bookings available</li>
               <li>Friendly, professional service</li>
             </ul>
-          </div>
-          <div className="bg-white border rounded-xl p-6">
             <ul className="space-y-2 text-gray-700">
               <li>Supplies included</li>
               <li>Checklist-driven quality</li>
@@ -222,7 +268,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-white rounded-xl border p-6">
-            <QuoteForm />
+            <QuoteForm id="quote" />
           </div>
         </div>
       </section>

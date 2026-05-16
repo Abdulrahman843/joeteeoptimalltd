@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import PlaceholderArt from "../../../components/PlaceholderArt"
+import Photo from "../../../components/Photo"
 import { posts } from "../posts"
-import { site } from "../../../lib/site"
+import { site, images } from "../../../lib/site"
 
 type Props = { params: { slug: string } }
 
@@ -30,17 +30,30 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 }
 
+const BLOG_IMAGES: Record<string, { src: string; alt: string }> = {
+  "kitchen-deep-cleaning-guide": images.blogKitchen,
+  "why-professional-cleaners-save-time": images.blogPros,
+  "post-construction-cleaning-tips": images.blogPostBuild
+}
+
 export default function BlogPost({ params }: Props) {
   const post = posts.find(p => p.slug === params.slug)
   if (!post) return notFound()
-  const index = posts.findIndex(p => p.slug === post.slug)
+  const img = BLOG_IMAGES[post.slug] ?? images.deepClean
   return (
     <main className="container py-16 max-w-3xl">
       <article className="prose max-w-none">
         <header className="not-prose mb-6 space-y-4">
           <h1 className="text-4xl font-bold">{post.title}</h1>
           <p className="text-sm text-gray-500">{post.date}</p>
-          <PlaceholderArt label={post.title} variant={index} />
+          <Photo
+            src={img.src}
+            alt={img.alt}
+            aspect="wide"
+            priority
+            sizes="(min-width: 1024px) 768px, 100vw"
+            className="shadow-md"
+          />
         </header>
         {post.sections.map(s => (
           <section key={s.heading}>

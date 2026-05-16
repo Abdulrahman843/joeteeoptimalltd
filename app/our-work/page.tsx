@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import PlaceholderArt from "../../components/PlaceholderArt"
+import Photo from "../../components/Photo"
+import { images } from "../../lib/site"
 
 export const metadata: Metadata = {
   title: "Our Work",
@@ -10,30 +11,64 @@ export const metadata: Metadata = {
 }
 
 const PROJECTS = [
-  { title: "Two-bed end of tenancy", caption: "Camden, London — full checklist clean" },
-  { title: "Office reset", caption: "Shoreditch — weekly maintenance" },
-  { title: "Airbnb turnover", caption: "Kensington — 2-hour same-day reset" },
-  { title: "Post-builders clean", caption: "Manchester — kitchen refit" },
-  { title: "Deep clean", caption: "Birmingham — family home" },
-  { title: "Move-in clean", caption: "Bristol — three-bed flat" }
+  {
+    title: "Two-bed end of tenancy",
+    caption: "Camden, London — full checklist clean",
+    image: images.endOfTenancy
+  },
+  {
+    title: "Office reset",
+    caption: "Shoreditch — weekly maintenance",
+    image: images.office
+  },
+  {
+    title: "Airbnb turnover",
+    caption: "Kensington — 2-hour same-day reset",
+    image: images.airbnb
+  },
+  {
+    title: "Post-builders clean",
+    caption: "Manchester — kitchen refit",
+    image: images.afterBuilders
+  },
+  {
+    title: "Deep clean",
+    caption: "Birmingham — family home",
+    image: images.deepClean
+  },
+  {
+    title: "Move-in clean",
+    caption: "Bristol — three-bed flat",
+    image: images.moveIn
+  }
 ]
 
 export default function OurWork() {
   return (
     <main className="container py-16">
-      <h1 className="text-4xl font-bold mb-8">Our Work</h1>
-      <p className="text-gray-600 mb-6">
-        Selected projects and before/after transformations.
+      <h1 className="text-4xl font-bold mb-4">Our Work</h1>
+      <p className="text-gray-600 mb-8 max-w-2xl">
+        Selected residential and commercial projects across the UK — end of
+        tenancy, deep cleans, after-builders, Airbnb turnovers, and recurring
+        commercial contracts.
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {PROJECTS.map((p, i) => (
-          <div key={p.title} className="bg-white border rounded-xl overflow-hidden">
-            <PlaceholderArt label={p.title} variant={i} className="rounded-none" />
-            <div className="p-4">
+        {PROJECTS.map(p => (
+          <article
+            key={p.title}
+            className="group bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col transition hover:shadow-md hover:-translate-y-0.5"
+          >
+            <Photo
+              src={p.image.src}
+              alt={p.image.alt}
+              className="rounded-none"
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            />
+            <div className="p-4 flex-1">
               <p className="font-semibold">{p.title}</p>
               <p className="text-sm text-gray-600">{p.caption}</p>
             </div>
-          </div>
+          </article>
         ))}
       </div>
       <div className="mt-8">
