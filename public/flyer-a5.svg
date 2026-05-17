@@ -39,7 +39,7 @@
   <g transform="translate(100,118)">
     <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
     <text x="20" y="-4" text-anchor="middle" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#111827">Website</text>
-    <image href="/api/qr?data=https%3A%2F%2Fwww.joeteeoptimalltd.co.uk%2F&amp;fmt=png" x="4" y="6" width="32" height="32"/>
+    <image href="/api/qr?data=https%3A%2F%2Fwww.joeteeoptimal.co.uk%2F&amp;fmt=png" x="4" y="6" width="32" height="32"/>
   </g>
   <g transform="translate(100,162)">
     <rect x="0" y="0" width="40" height="40" fill="#ffffff" stroke="#e5e7eb"/>
@@ -49,9 +49,9 @@
 
   <g transform="translate(8,164)">
     <text x="0" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Website:</text>
-    <text x="18" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">www.joeteeoptimalltd.co.uk</text>
+    <text x="18" y="0" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">www.joeteeoptimal.co.uk</text>
     <text x="0" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Email:</text>
-    <text x="12" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">booking@joeteeoptimalltd.co.uk</text>
+    <text x="12" y="8" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">booking@joeteeoptimal.co.uk</text>
     <text x="0" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#374151">Phone:</text>
     <text x="14" y="16" font-family="Inter, Manrope, Arial" font-size="3.6" fill="#0f766e">+447442907768</text>
   </g>

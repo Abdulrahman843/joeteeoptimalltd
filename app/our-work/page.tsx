@@ -124,7 +124,7 @@ export default function OurWork() {
                 </p>
                 <div className="pt-2 space-y-0.5 text-xs text-white/75">
                   <p>{site.phoneDisplay}</p>
-                  <p>www.joeteeoptimalltd.co.uk</p>
+                  <p>www.joeteeoptimal.co.uk</p>
                   <p>{site.email}</p>
                 </div>
               </div>

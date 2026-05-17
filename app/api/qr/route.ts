@@ -4,7 +4,7 @@ import QRCode from "qrcode"
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
-  const data = searchParams.get("data") || "https://www.joeteeoptimalltd.co.uk/"
+  const data = searchParams.get("data") || "https://www.joeteeoptimal.co.uk/"
   const fmt = (searchParams.get("fmt") || "png").toLowerCase()
   try {
     if (fmt === "svg") {

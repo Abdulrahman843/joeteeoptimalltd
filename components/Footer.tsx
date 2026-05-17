@@ -29,7 +29,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.joeteeoptimalltd.co.uk
+              www.joeteeoptimal.co.uk
             </a>
           </div>
         </div>
