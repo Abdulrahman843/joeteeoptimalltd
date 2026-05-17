@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { site, telHref } from "../lib/site"
@@ -23,9 +24,9 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
       <div className="container flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt={`${site.name} logo`} className="h-8 w-8" />
-          <span className="font-semibold">{site.name}</span>
+        <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Image src="/logo.svg" alt={`${site.name} logo`} width={32} height={32} className="h-8 w-8" />
+          <span className="font-semibold text-sm md:text-base">{site.shortName}</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6" aria-label="Primary">
           {NAV.map(n => (
@@ -34,20 +35,26 @@ export default function Navbar() {
               href={n.href}
               className={
                 isActive(n.href)
-                  ? "text-brand-700 font-semibold border-b-2 border-brand-600"
-                  : "hover:text-brand-700"
+                  ? "text-brand-700 font-semibold border-b-2 border-brand-600 text-sm"
+                  : "hover:text-brand-700 text-sm transition-colors"
               }
             >
               {n.label}
             </Link>
           ))}
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href={site.whatsappUrl}
+            className="text-sm text-brand-700 font-medium hover:underline"
+          >
+            WhatsApp
+          </a>
           <a
             href={telHref}
-            className="bg-brand-600 text-white px-4 py-2 rounded-full"
+            className="bg-brand-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-brand-700 transition-colors"
           >
-            Call
+            {site.phoneDisplay}
           </a>
         </div>
         <button
@@ -84,23 +91,31 @@ export default function Navbar() {
       </div>
       {open && (
         <div id="mobile-nav" className="md:hidden border-t bg-white">
-          <div className="container py-3 flex flex-col gap-3">
+          <div className="container py-4 flex flex-col gap-4">
             {NAV.map(n => (
               <Link
                 key={n.href}
                 href={n.href}
-                className={isActive(n.href) ? "text-brand-700 font-semibold" : ""}
+                className={`text-base ${isActive(n.href) ? "text-brand-700 font-semibold" : "text-gray-700"}`}
                 onClick={() => setOpen(false)}
               >
                 {n.label}
               </Link>
             ))}
-            <a
-              href={telHref}
-              className="bg-brand-600 text-white px-4 py-2 rounded text-center"
-            >
-              Call {site.phoneDisplay}
-            </a>
+            <div className="border-t pt-4 flex flex-col gap-3">
+              <a
+                href={site.whatsappUrl}
+                className="border border-brand-600 text-brand-700 px-4 py-2.5 rounded text-center font-medium text-sm"
+              >
+                WhatsApp Us
+              </a>
+              <a
+                href={telHref}
+                className="bg-brand-600 text-white px-4 py-2.5 rounded text-center font-medium text-sm"
+              >
+                Call {site.phoneDisplay}
+              </a>
+            </div>
           </div>
         </div>
       )}

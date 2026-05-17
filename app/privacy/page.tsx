@@ -71,7 +71,7 @@ export default function PrivacyPage() {
           <strong>Formspree</strong> — processes quote form submissions on our behalf.
         </li>
         <li>
-          <strong>Vercel</strong> — hosts the website and serverless functions.
+          <strong>Our hosting provider</strong> — hosts the website and serverless functions to deliver pages to your browser.
         </li>
       </ul>
       <p>

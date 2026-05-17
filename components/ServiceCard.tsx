@@ -25,14 +25,17 @@ export default function ServiceCard({
         />
       )}
       <div className="p-6 flex flex-col gap-3 flex-1">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-gray-600 flex-1">{description}</p>
+        <h3 className="text-xl font-semibold group-hover:text-brand-700 transition-colors">{title}</h3>
+        <p className="text-gray-600 flex-1 text-sm leading-relaxed">{description}</p>
         <div>
           <Link
             href={href}
-            className="inline-block bg-brand-600 text-white px-4 py-2 rounded"
+            className="inline-flex items-center gap-1.5 bg-brand-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-brand-700 transition-colors"
           >
             Get a Free Quote
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </Link>
         </div>
       </div>

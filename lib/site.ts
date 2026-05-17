@@ -5,7 +5,7 @@ export const site = {
   description:
     "Professional residential and commercial cleaning across the UK — end of tenancy, deep cleaning, move-in/move-out, after-builders, Airbnb turnovers, janitorial, and regular maintenance.",
   url: "https://www.joeteeoptimalltd.co.uk",
-  email: "info@joeteeoptimalltd.com",
+  email: "booking@joeteeoptimalltd.co.uk",
   phone: "+447442907768",
   phoneDisplay: "+44 7442 907768",
   whatsappNumber: "447442907768",
@@ -14,29 +14,34 @@ export const site = {
   hoursOpens: "08:00",
   hoursCloses: "21:00",
   country: "GB",
-  region: "Greater London",
+  region: "Hampshire",
   priceRange: "££",
+  primaryArea: "Portsmouth",
   serviceAreas: [
-    "London",
-    "Manchester",
-    "Birmingham",
-    "Leeds",
-    "Glasgow",
-    "Liverpool",
-    "Edinburgh",
-    "Bristol",
-    "Nottingham",
-    "Sheffield",
-    "Leicester",
-    "Brighton"
+    "Portsmouth",
+    "Southampton",
+    "Chichester",
+    "Fareham",
+    "Havant",
+    "Waterlooville",
+    "Gosport",
+    "Winchester",
+    "Bournemouth",
+    "Brighton",
+    "Reading",
+    "Guildford",
+    "Basingstoke",
+    "Crawley",
+    "Worthing",
+    "Eastbourne",
+    "London"
   ]
 } as const
 
 export const telHref = `tel:${site.phone}`
 export const mailHref = `mailto:${site.email}`
 
-// Centralized image map (Unsplash). Each ID below has been verified to return
-// HTTP 200 from images.unsplash.com. To swap an image, change only the ID.
+// Centralized image map (Unsplash). All IDs below are verified working.
 // Pattern: https://images.unsplash.com/photo-{id}?auto=format&fit=crop&w={w}&q=80
 const u = (id: string, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
@@ -51,8 +56,8 @@ export const images = {
     alt: "Empty, freshly cleaned room ready for the next tenant"
   },
   deepClean: {
-    src: u("1556228720-195a672e8a03"),
-    alt: "Spotless, deep-cleaned modern living room"
+    src: u("1556909114-f6e7ad7d3136"),
+    alt: "Professionally deep-cleaned kitchen with polished worktops and spotless surfaces"
   },
   office: {
     src: u("1556761175-5973dc0f32e7"),
@@ -78,14 +83,17 @@ export const images = {
     src: u("1552321554-5fefe8c9ef14"),
     alt: "Sparkling, modern bathroom with chrome fixtures"
   },
+  // Unique image: eco-safe cleaning kit laid out by the team
   team: {
     src: u("1581578017093-cd30fce4eeb7"),
-    alt: "Eco-safe cleaning supplies used by our trained team"
+    alt: "Eco-safe professional cleaning supplies used by the Joetee Optimal team"
   },
+  // Empty, freshly cleaned room — clearly move-in ready
   moveIn: {
     src: u("1505691938895-1758d7feb511"),
-    alt: "Freshly cleaned residential interior ready for new occupants"
+    alt: "Freshly cleaned empty residential room ready for new occupants to move in"
   },
+  // Regular maintenance: active cleaning in progress
   regular: {
     src: u("1581578731548-c64695cc6952"),
     alt: "Professional cleaner maintaining a home with regular cleans"

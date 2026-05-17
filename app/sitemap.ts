@@ -7,6 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
     { path: "/services", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/services/end-of-tenancy", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/services/commercial", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/services/post-construction", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/services/property", priority: 0.85, changeFrequency: "monthly" },
     { path: "/our-work", priority: 0.7, changeFrequency: "monthly" },
     { path: "/about", priority: 0.6, changeFrequency: "yearly" },
     { path: "/blogs", priority: 0.8, changeFrequency: "weekly" },
