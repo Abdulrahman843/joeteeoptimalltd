@@ -5,7 +5,7 @@ export const site = {
   description:
     "Professional residential and commercial cleaning across the UK — end of tenancy, deep cleaning, move-in/move-out, after-builders, Airbnb turnovers, janitorial, and regular maintenance.",
   url: "https://www.joeteeoptimal.co.uk",
-  email: "booking@joeteeoptimal.co.uk",
+  email: "bookings@joeteeoptimal.co.uk",
   phone: "+447442907768",
   phoneDisplay: "+44 7442 907768",
   whatsappNumber: "447442907768",

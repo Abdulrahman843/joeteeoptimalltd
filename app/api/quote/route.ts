@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     const transport = buildTransport()
     await transport.sendMail({
       from:    process.env.SMTP_FROM ?? `"Joetee Optimal Ltd" <${process.env.SMTP_USER}>`,
-      to:      process.env.CONTACT_TO ?? "booking@joeteeoptimal.co.uk",
+      to:      process.env.CONTACT_TO ?? "bookings@joeteeoptimal.co.uk",
       replyTo: `"${data.name}" <${data.email}>`,
       subject: "New Cleaning Quote Request – Joetee Optimal Ltd",
       text:    buildEmailText(data),

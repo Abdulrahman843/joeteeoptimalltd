@@ -59,7 +59,7 @@ export function buildEmailHtml(d: QuoteData): string {
       <td style="background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);padding:32px 40px;">
         <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#99f6e4;letter-spacing:.1em;text-transform:uppercase;">Joetee Optimal Ltd</p>
         <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">New Cleaning Quote Request</h1>
-        <p style="margin:10px 0 0;font-size:13px;color:#ccfbf1;">booking@joeteeoptimal.co.uk &nbsp;·&nbsp; joeteeoptimal.co.uk</p>
+        <p style="margin:10px 0 0;font-size:13px;color:#ccfbf1;">bookings@joeteeoptimal.co.uk &nbsp;·&nbsp; joeteeoptimal.co.uk</p>
       </td>
     </tr>
 
