@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Photo from "../../components/Photo"
-import { site, images } from "../../lib/site"
+import { site, images, telHref, mailHref } from "../../lib/site"
 
 export const metadata: Metadata = {
   title: "Our Work — Cleaning Projects Portsmouth & the South",
@@ -123,9 +123,9 @@ export default function OurWork() {
                   &ldquo;Raising the Standard of Clean&rdquo;
                 </p>
                 <div className="pt-2 space-y-0.5 text-xs text-white/75">
-                  <p>{site.phoneDisplay}</p>
-                  <p>www.joeteeoptimal.co.uk</p>
-                  <p>{site.email}</p>
+                  <a href={telHref} className="block hover:text-white">{site.phoneDisplay}</a>
+                  <a href={site.url} target="_blank" rel="noopener noreferrer" className="block hover:text-white">www.joeteeoptimal.co.uk</a>
+                  <a href={mailHref} className="block hover:text-white">{site.email}</a>
                 </div>
               </div>
             </div>
