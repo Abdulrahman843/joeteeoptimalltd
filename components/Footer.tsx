@@ -20,9 +20,10 @@ export default function Footer() {
             <a href={telHref} className="block text-brand-700 hover:underline">
               {site.phoneDisplay}
             </a>
-            <a href={mailHref} className="block text-brand-700 hover:underline">
-              {site.email}
-            </a>
+            <span className="block text-gray-700">{site.email}</span>
+            <Link href="/contact#quote" className="block text-brand-700 hover:underline text-xs">
+              → Send us an email
+            </Link>
             <a
               href={site.url}
               className="block text-brand-700 hover:underline"

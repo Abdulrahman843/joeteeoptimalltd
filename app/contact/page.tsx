@@ -18,8 +18,8 @@ const CONTACT_METHODS = [
   {
     label: "Email",
     value: site.email,
-    href: mailHref,
-    description: "We aim to reply within a few hours on all enquiries"
+    href: "#quote",
+    description: "Fill in the form below and we'll reply within a few hours"
   },
   {
     label: "WhatsApp",
